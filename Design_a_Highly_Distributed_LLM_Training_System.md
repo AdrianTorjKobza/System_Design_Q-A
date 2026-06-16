@@ -77,7 +77,7 @@ graph TD
 
 * **API Gateway / Ingress:** An API management tool that sits between a client and a collection of backend services, acting as a reverse proxy to route requests securely.
 * **Data / Tensor Parallelism:** Distributed training techniques. Data Parallelism splits the dataset across multiple GPUs (each holding a copy of the model). Tensor Parallelism splits the model's internal matrices across multiple GPUs when the model is too large to fit in a single GPU's memory.
-* **ELK Stack:** A collection of three open-source products—Elasticsearch, Logstash, and Kibana—used for searching, analyzing, and visualizing log data in real time.
+* **ELK Stack:** A collection of three open-source products (Elasticsearch, Logstash, and Kibana) used for searching, analyzing, and visualizing log data in real time.
 * **IAM (Identity and Access Management):** A framework of policies and technologies to ensure the right users and services have the appropriate access to technology resources.
 * **KMS (Key Management Service):** A secure service used to create and manage cryptographic keys that protect data.
 * **Microservices:** An architectural style that structures an application as a collection of loosely coupled, independently deployable services.

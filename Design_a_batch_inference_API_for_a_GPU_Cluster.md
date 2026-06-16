@@ -11,7 +11,7 @@ The core design decouples the client-facing API from the heavy lifting of the GP
 ```mermaid
 graph TD
     Client([Client Application])
-    API_GW[API Gateway / Ingress Controller]
+    API_GW["API Gateway <br/> Ingress Controller"]
     API_Server[Batch API Service]
     DB[(Metadata Database)]
     Queue[[Message Broker]]

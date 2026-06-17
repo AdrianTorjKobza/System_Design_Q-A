@@ -15,12 +15,12 @@ graph TD
     subgraph Control Plane
         JobService[Job Management Service]
         TimerService[Scheduler / Timer Service]
-        MetaDB[(Metadata DB <br/> e.g., PostgreSQL)]
+        MetaDB[(Metadata DB <br/> e.g. PostgreSQL)]
     end
     
     subgraph Data Plane
-        Queue{Message Broker <br/> e.g., Kafka / RabbitMQ}
-        StateStore[(State Store <br/> e.g., Redis)]
+        Queue{Message Broker <br/> e.g. Kafka / RabbitMQ}
+        StateStore[(State Store <br/> e.g. Redis)]
     end
     
     subgraph Execution Fleet
@@ -30,7 +30,7 @@ graph TD
     end
     
     subgraph Observability
-        Monitoring[Metrics & Logging <br/> e.g., Prometheus / ELK]
+        Monitoring[Metrics & Logging <br/> e.g. Prometheus / ELK]
     end
 
     %% Define Connections
@@ -62,8 +62,8 @@ graph TD
 ## 3. Well-Architected Framework Analysis
 
 ### Operational Excellence
-* **Infrastructure as Code (IaC):** The entire stack is provisioned using IaC tools (e.g., Terraform or Pulumi) to ensure repeatable and consistent environments.
-* **Observability:** Centralized logging (e.g., ELK/EFK stack) and metrics collection (e.g., Prometheus/Grafana) are implemented across all components. Distributed tracing is used to track job lifecycles from submission to completion.
+* **Infrastructure as Code (IaC):** The entire stack is provisioned using IaC tools (e.g. Terraform or Pulumi) to ensure repeatable and consistent environments.
+* **Observability:** Centralized logging (e.g. ELK/EFK stack) and metrics collection (e.g. Prometheus/Grafana) are implemented across all components. Distributed tracing is used to track job lifecycles from submission to completion.
 * **Automated Deployments:** CI/CD pipelines automate testing and deployment, allowing for zero-downtime rolling updates of worker nodes and control plane services.
 
 ### Security
